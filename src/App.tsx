@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import AboutCFL from './components/AboutCFL';
 import Benefits from './components/Benefits';
 import MissionVision from './components/MissionVision';
 import Modalities from './components/Modalities';
@@ -13,7 +12,6 @@ function App() {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <AboutCFL />
       <Benefits />
       <MissionVision />
       <Modalities />

@@ -21,11 +21,12 @@ export default function Hero() {
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <h1 className="text-7xl lg:text-8xl font-bold leading-none tracking-tight">
                 <span className="block">Capital</span>
-                <span className="block text-[#0BA4B5]">For Life</span>
+                <span className="block text-[#44b2be]">For Life</span>
               </h1>
               <div className="w-20 h-1 bg-[#0BA4B5] rounded-full"></div>
               <p className="text-xl text-white text-opacity-90 max-w-lg leading-relaxed">
-                Tu futuro financiero comienza hoy. Únete a la comunidad que está transformando vidas.
+                Bienvenido a Capital For Life, el sistema que rescata la tradición del ahorro colectivo,
+                                 potenciado por la seguridad digital y la máxima confiabilidad.
               </p>
             </div>
 
@@ -35,7 +36,7 @@ export default function Hero() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold transition-all hover:bg-white hover:text-[#7AB82E]">
-                Ver Demo
+                Conocer más
               </button>
             </div>
 

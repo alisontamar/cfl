@@ -15,6 +15,15 @@ export default function MissionVision() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+         {/* Header */}
+        <div className="text-center max-w-4xl mx-auto mb-20 animate-fade-in">
+          <div className="inline-flex items-center space-x-2 bg-white bg-opacity-20 backdrop-blur-sm text-white px-5 py-2 rounded-full text-sm font-light mb-6">
+          </div>
+          <h2 className="text-5xl lg:text-6xl font-light text-gray-900 mb-6 leading-tight tracking-wide">
+            Nuestra Misión y Visión
+          </h2>
+        </div>
+
         {/* Misión y Visión - Lado a Lado */}
         <div className="grid lg:grid-cols-2 gap-8 mb-32">
           {/* Misión */}
