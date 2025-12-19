@@ -20,16 +20,14 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-2 group cursor-pointer">
-            <div className="bg-white p-1.5 rounded-lg group-hover:scale-105 transition-transform shadow-lg">
-              <Shield className="w-5 h-5 text-[#7AB82E]" />
-            </div>
-            <span className="text-lg font-bold text-white">
-              Capital For Life
-            </span>
-          </div>
-
+         {/* Logo */}
+<div className="flex items-center space-x-2 group cursor-pointer">
+  <img 
+    src="/logo.svg" 
+    alt="Capital For Life Logo" 
+    className="w-20 h-20 object-contain group-hover:scale-105 transition-transform"
+  />
+</div>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
             <button
