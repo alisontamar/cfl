@@ -23,10 +23,13 @@ export default function Navbar() {
          {/* Logo */}
 <div className="flex items-center space-x-2 group cursor-pointer">
   <img 
-    src="/logo.svg" 
+    src="/logo.webp" 
     alt="Capital For Life Logo" 
-    className="w-20 h-20 object-contain group-hover:scale-105 transition-transform"
+    className="w-16 h-16 object-contain group-hover:scale-105 transition-transform" 
   />
+   <span className="text-base font-bold text-white">
+    Capital For Life
+  </span>
 </div>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
