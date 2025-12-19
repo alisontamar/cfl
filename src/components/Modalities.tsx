@@ -6,9 +6,9 @@ export default function Modalities() {
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[500px] h-[500px] bg-[#7AB82E] opacity-5 rounded-full -top-48 left-1/4 animate-pulse"></div>
-        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-5 rounded-full top-1/3 -right-32 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute w-[450px] h-[450px] bg-[#7AB82E] opacity-5 rounded-full -bottom-48 right-1/3 animate-pulse" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-5 rounded-full bottom-1/4 -left-32 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-5 rounded-full top-1/3 -right-32 animate-pulse" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute w-[450px] h-[450px] bg-[#7AB82E] opacity-5 rounded-full -bottom-48 right-1/3 animate-pulse" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-5 rounded-full bottom-1/4 -left-32 animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -175,30 +175,7 @@ export default function Modalities() {
         </div>
 
         {/* Bottom Banner */}
-        <div className="relative group animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#7AB82E] to-[#0BA4B5] rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-          
-          <div className="relative bg-gradient-to-r from-[#7AB82E] to-[#0BA4B5] rounded-3xl p-12 shadow-2xl overflow-hidden">
-            {/* Background pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute w-64 h-64 bg-white rounded-full -top-32 -right-32 group-hover:scale-150 transition-transform duration-1000"></div>
-              <div className="absolute w-80 h-80 bg-white rounded-full -bottom-40 -left-40 group-hover:scale-150 transition-transform duration-1000"></div>
-            </div>
-
-            <div className="relative z-10 text-center">
-              <h3 className="text-4xl font-light text-white mb-4 tracking-wide">
-                Próximamente disponibles
-              </h3>
-              <p className="text-white text-opacity-90 text-lg max-w-2xl mx-auto mb-8 font-light leading-relaxed">
-                Estamos trabajando para traerte estas modalidades de ahorro muy pronto. Regístrate ahora para ser de los primeros en acceder.
-              </p>
-              <button className="group/btn bg-white text-[#7AB82E] px-8 py-3 rounded-full font-medium hover:scale-105 transition-all shadow-lg flex items-center space-x-2 mx-auto">
-                <span>Notifícame</span>
-                <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-              </button>
-            </div>
-          </div>
-        </div>
+        
       </div>
 
       <style>{`

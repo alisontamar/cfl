@@ -6,9 +6,9 @@ export default function Regulations() {
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[500px] h-[500px] bg-[#7AB82E] opacity-5 rounded-full top-0 -left-48 animate-pulse"></div>
-        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-5 rounded-full top-1/4 right-0 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute w-[450px] h-[450px] bg-[#7AB82E] opacity-5 rounded-full -bottom-48 left-1/3 animate-pulse" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-5 rounded-full bottom-1/4 -right-32 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-5 rounded-full top-1/4 right-0 animate-pulse" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute w-[450px] h-[450px] bg-[#7AB82E] opacity-5 rounded-full -bottom-48 left-1/3 animate-pulse" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-5 rounded-full bottom-1/4 -right-32 animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

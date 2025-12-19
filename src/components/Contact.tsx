@@ -6,9 +6,9 @@ export default function Contact() {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[600px] h-[600px] bg-white opacity-5 rounded-full -top-64 -left-32 animate-pulse"></div>
-        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-10 rounded-full top-1/4 -right-32 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute w-[500px] h-[500px] bg-white opacity-5 rounded-full -bottom-48 right-1/4 animate-pulse" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-10 rounded-full bottom-1/4 left-0 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-10 rounded-full top-1/4 -right-32 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute w-[500px] h-[500px] bg-white opacity-5 rounded-full -bottom-48 right-1/4 animate-pulse" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-10 rounded-full bottom-1/4 left-0 animate-pulse" style={{ animationDelay: '3s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

@@ -6,7 +6,7 @@ export default function AboutCFL() {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-[600px] h-[600px] bg-white opacity-5 rounded-full -top-64 -right-32 animate-pulse"></div>
-        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-10 rounded-full bottom-0 left-0 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-10 rounded-full bottom-0 left-0 animate-pulse" style={{ animationDelay: '3s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

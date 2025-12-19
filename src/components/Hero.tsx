@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-96 h-96 bg-white opacity-5 rounded-full -top-48 -left-48 animate-pulse"></div>
-        <div className="absolute w-[500px] h-[500px] bg-white opacity-5 rounded-full -bottom-64 -right-64 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute w-[500px] h-[500px] bg-white opacity-5 rounded-full -bottom-64 -right-64 animate-pulse" style={{ animationDelay: '3s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <h1 className="text-7xl lg:text-8xl font-bold leading-none tracking-tight">
                 <span className="block">Capital</span>
-                <span className="block text-[#44b2be]">For Life</span>
+                <span className="block text-[#7cdbe5]">For Life</span>
               </h1>
               <div className="w-20 h-1 bg-[#0BA4B5] rounded-full"></div>
               <p className="text-xl text-white text-opacity-90 max-w-lg leading-relaxed">

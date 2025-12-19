@@ -10,8 +10,8 @@ export default function Footer() {
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-96 h-96 bg-white opacity-5 rounded-full -top-48 -left-32 animate-pulse"></div>
-        <div className="absolute w-[500px] h-[500px] bg-[#0BA4B5] opacity-10 rounded-full -bottom-64 -right-64 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute w-80 h-80 bg-white opacity-5 rounded-full top-1/2 right-1/4 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute w-[500px] h-[500px] bg-[#0BA4B5] opacity-10 rounded-full -bottom-64 -right-64 animate-pulse" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute w-80 h-80 bg-white opacity-5 rounded-full top-1/2 right-1/4 animate-pulse" style={{ animationDelay: '3s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
