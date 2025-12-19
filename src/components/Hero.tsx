@@ -55,14 +55,19 @@ export default function Hero() {
           </div>
 
           {/* Right Image - Floating Mascot */}
-          <div className="relative animate-float">
+           <div className="relative animate-float group cursor-pointer">
             <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-100 rounded-3xl blur-3xl opacity-20"></div>
             
             <div className="relative">
               <img 
                 src="mascot.svg" 
                 alt="CFL Mascot" 
-                className="w-full h-auto rounded-3xl shadow-2xl"
+                className="w-full h-auto rounded-3xl shadow-2xl transition-opacity duration-500 group-hover:opacity-0"
+              />
+              <img 
+                src="mascot2.webp" 
+                alt="CFL Mascot 2" 
+                className="w-full h-auto rounded-3xl shadow-2xl absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
               />
             </div>
           </div>
