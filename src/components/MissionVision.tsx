@@ -15,7 +15,7 @@ export default function MissionVision() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-         {/* Header */}
+        {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-20 animate-fade-in">
           <div className="inline-flex items-center space-x-2 bg-white bg-opacity-20 backdrop-blur-sm text-white px-5 py-2 rounded-full text-sm font-light mb-6">
           </div>
@@ -36,7 +36,7 @@ export default function MissionVision() {
                 </div>
                 <h2 className="text-4xl font-light text-gray-900 tracking-wide">Nuestra Misión</h2>
               </div>
-              
+
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed font-light">
                   Democratizar el acceso al ahorro colectivo mediante una plataforma digital segura, transparente y eficiente que empodera a las comunidades para alcanzar sus metas financieras.
@@ -59,7 +59,7 @@ export default function MissionVision() {
                 </div>
                 <h2 className="text-4xl font-light text-gray-900 tracking-wide">Nuestra Visión</h2>
               </div>
-              
+
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed font-light">
                   Ser la plataforma líder en Latinoamérica para el ahorro colectivo digital, reconocida por transformar vidas a través de la inclusión financiera y la innovación.
@@ -127,69 +127,6 @@ export default function MissionVision() {
               <p className="text-gray-600 leading-relaxed text-center font-light">
                 Adoptamos tecnología de vanguardia para simplificar y mejorar continuamente la experiencia de ahorro colectivo.
               </p>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA Final */}
-        <div className="mt-20 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="relative group">
-            {/* Glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#7AB82E] to-[#0BA4B5] rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-            
-            {/* Main card */}
-            <div className="relative bg-gradient-to-r from-[#7AB82E] to-[#0BA4B5] rounded-3xl p-12 shadow-2xl overflow-hidden">
-              {/* Animated background patterns */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute w-64 h-64 bg-white rounded-full -top-32 -right-32 group-hover:scale-150 transition-transform duration-1000"></div>
-                <div className="absolute w-96 h-96 bg-white rounded-full -bottom-48 -left-48 group-hover:scale-150 transition-transform duration-1000"></div>
-              </div>
-
-              <div className="relative z-10 text-center">
-                <div className="inline-flex items-center space-x-2 bg-white bg-opacity-20 backdrop-blur-sm text-white px-5 py-2 rounded-full text-sm font-light mb-6">
-                  <Sparkles className="w-4 h-4 animate-pulse" />
-                  <span>Comienza tu viaje financiero</span>
-                </div>
-                
-                <h3 className="text-5xl font-light text-white mb-6 tracking-wide group-hover:scale-105 transition-transform duration-300">
-                  Únete a nuestra misión
-                </h3>
-                
-                <p className="text-xl text-white text-opacity-90 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
-                  Forma parte de la comunidad que está transformando el ahorro en Latinoamérica
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <button className="group/btn bg-white text-[#7AB82E] px-10 py-4 rounded-full font-medium hover:scale-105 transition-all shadow-lg text-lg hover:shadow-2xl flex items-center space-x-2">
-                    <span>Comienza Hoy</span>
-                    <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </button>
-                  
-                  <button className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-medium hover:bg-white hover:text-[#7AB82E] transition-all text-lg">
-                    Conoce Más
-                  </button>
-                </div>
-
-                {/* Stats */}
-                <div className="mt-12 flex flex-wrap justify-center gap-8">
-                  <div className="text-center group/stat">
-                    <div className="text-3xl font-light text-white mb-1 group-hover/stat:scale-110 transition-transform">2,000+</div>
-                    <div className="text-sm text-white text-opacity-80 font-light">Miembros Activos</div>
-                  </div>
-                  <div className="w-px h-12 bg-white opacity-20"></div>
-                  <div className="text-center group/stat">
-                    <div className="text-3xl font-light text-white mb-1 group-hover/stat:scale-110 transition-transform">$5M+</div>
-                    <div className="text-sm text-white text-opacity-80 font-light">En Ahorros</div>
-                  </div>
-                  <div className="w-px h-12 bg-white opacity-20"></div>
-                  <div className="text-center group/stat">
-                    <div className="text-3xl font-light text-white mb-1 group-hover/stat:scale-110 transition-transform">98%</div>
-                    <div className="text-sm text-white text-opacity-80 font-light">Satisfacción</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

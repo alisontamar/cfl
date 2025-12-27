@@ -1,25 +1,54 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Benefits from './components/Benefits';
-import MissionVision from './components/MissionVision';
-import Modalities from './components/Modalities';
-import Regulations from './components/Regulations';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import{ BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import PasanakuMontly from "./pages/pasanakuMontly";
+import PasanakuDaily from "./pages/pasanakuDaily";
+import PasanakuWeekly from "./pages/pasanakuWeekly";
+import PasanakuAuction from "./pages/pasanakuAuction";
+import PasanakuPrivate from "./pages/pasanakuPrivate";
+import PasanakuPublic from "./pages/pasanakuPublic";
+
 
 function App() {
+  const pasanakuTypes = [
+    {
+      title: "mensual",
+      component: PasanakuMontly
+    },
+    {
+      title: "diario",
+      component: PasanakuDaily
+    },
+    {
+      title: "semanal",
+      component: PasanakuWeekly 
+    },
+    {
+      title: "subastas",
+      component: PasanakuAuction
+    },
+    {
+      title: "privado",
+      component: PasanakuPrivate
+    },
+    {
+      title: "publico",
+      component: PasanakuPublic
+    },
+  ];
+
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Benefits />
-      <MissionVision />
-      <Modalities />
-      <Regulations />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {pasanakuTypes.map((type) => (
+          <Route path={`/pasanaku-${type.title.toLowerCase()}`} element={<type.component />} />
+        ))}
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
+
+
 
 export default App;

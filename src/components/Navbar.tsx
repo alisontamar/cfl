@@ -11,49 +11,92 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] backdrop-blur-xl border-b border-white border-opacity-10 z-50">
+    <nav className="
+      fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b
+      bg-gradient-to-br 
+      from-[#7AB82E] to-[#5A8C22]
+      dark:from-[#0F2A14] dark:to-[#081B0D]
+      border-white/10 dark:border-white/5
+    ">
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-96 h-96 bg-white opacity-5 rounded-full -top-48 -left-32 animate-pulse"></div>
-        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-10 rounded-full -top-32 right-1/4 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="
+          absolute w-96 h-96 rounded-full -top-48 -left-32 animate-pulse
+          bg-white/5
+          dark:bg-[#6FCD13]/10
+        " />
+        <div
+          className="
+            absolute w-80 h-80 rounded-full -top-32 right-1/4 animate-pulse
+            bg-[#5A8C22]/10
+            dark:bg-[#0BA4B5]/15
+          "
+          style={{ animationDelay: '1s' }}
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex items-center justify-between h-16">
-         {/* Logo */}
-<div className="flex items-center space-x-2 group cursor-pointer">
-  <img 
-    src="/logo.webp" 
-    alt="Capital For Life Logo" 
-    className="w-16 h-16 object-contain group-hover:scale-105 transition-transform" 
-  />
-   <span className="text-base font-bold text-white">
-    Capital For Life
-  </span>
-</div>
+
+          {/* Logo */}
+          <div className="flex items-center space-x-2 group cursor-pointer">
+            <img
+              src="/logo.webp"
+              alt="Capital For Life Logo"
+              className="w-16 h-16 object-contain group-hover:scale-105 transition-transform"
+            />
+            <span className="text-base font-bold text-white">
+              Capital For Life
+            </span>
+          </div>
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
             <button
-              onClick={() => scrollToSection('como-funciona')}
-              className="text-white text-opacity-90 hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-lg transition-all text-sm font-medium"
+              onClick={() => scrollToSection('funciona')}
+              className="
+                text-white/90 hover:text-white
+                hover:bg-white/10
+                dark:hover:bg-[#6FCD13]/10
+                px-3 py-2 rounded-lg transition-all text-sm font-medium
+              "
             >
               Cómo Funciona
             </button>
+
             <button
               onClick={() => scrollToSection('beneficios')}
-              className="text-white text-opacity-90 hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-lg transition-all text-sm font-medium"
+              className="
+                text-white/90 hover:text-white
+                hover:bg-white/10
+                dark:hover:bg-[#6FCD13]/10
+                px-3 py-2 rounded-lg transition-all text-sm font-medium
+              "
             >
               Beneficios
             </button>
+
             <button
               onClick={() => scrollToSection('modalidades')}
-              className="text-white text-opacity-90 hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-lg transition-all text-sm font-medium"
+              className="
+                text-white/90 hover:text-white
+                hover:bg-white/10
+                dark:hover:bg-[#6FCD13]/10
+                px-3 py-2 rounded-lg transition-all text-sm font-medium
+              "
             >
               Modalidades
             </button>
+
             <button
               onClick={() => scrollToSection('contacto')}
-              className="ml-4 bg-white text-[#7AB82E] hover:bg-opacity-90 px-5 py-2 rounded-lg transition-all text-sm font-semibold shadow-lg"
+              className="
+                ml-4 px-5 py-2 rounded-lg transition-all text-sm font-semibold shadow-lg
+                bg-white text-[#5A8C22]
+                hover:bg-white/90
+                dark:bg-[#6FCD13] dark:text-background-dark
+                dark:hover:bg-[#8AFB2A]
+              "
             >
               Únete
             </button>
@@ -62,7 +105,11 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors"
+            className="
+              md:hidden p-2 rounded-lg transition-colors
+              hover:bg-white/10
+              dark:hover:bg-[#6FCD13]/15
+            "
           >
             {isOpen ? (
               <X className="w-5 h-5 text-white" />
@@ -75,52 +122,42 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#5A8C22] bg-opacity-95 border-t border-white border-opacity-10 animate-slide-down backdrop-blur-xl">
+        <div className="
+          md:hidden border-t animate-slide-down backdrop-blur-xl
+          bg-[#5A8C22]/95
+          dark:bg-[#081B0D]/95
+          border-white/10 dark:border-white/5
+        ">
           <div className="px-4 py-4 space-y-2">
-            <button
-              onClick={() => scrollToSection('como-funciona')}
-              className="block w-full text-left text-white text-opacity-90 hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-lg transition-all text-sm font-medium"
-            >
-              Cómo Funciona
-            </button>
-            <button
-              onClick={() => scrollToSection('beneficios')}
-              className="block w-full text-left text-white text-opacity-90 hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-lg transition-all text-sm font-medium"
-            >
-              Beneficios
-            </button>
-            <button
-              onClick={() => scrollToSection('modalidades')}
-              className="block w-full text-left text-white text-opacity-90 hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-lg transition-all text-sm font-medium"
-            >
-              Modalidades
-            </button>
+            {['como-funciona', 'beneficios', 'modalidades'].map((id, i) => (
+              <button
+                key={i}
+                onClick={() => scrollToSection(id)}
+                className="
+                  block w-full text-left text-white/90 hover:text-white
+                  hover:bg-white/10 dark:hover:bg-[#6FCD13]/10
+                  px-3 py-2 rounded-lg transition-all text-sm font-medium
+                "
+              >
+                {id === 'como-funciona' ? 'Cómo Funciona' : id.charAt(0).toUpperCase() + id.slice(1)}
+              </button>
+            ))}
+
             <button
               onClick={() => scrollToSection('contacto')}
-              className="block w-full bg-white text-[#7AB82E] hover:bg-opacity-90 px-5 py-2 rounded-lg transition-all text-sm font-semibold mt-3 shadow-lg"
+              className="
+                block w-full mt-3 px-5 py-2 rounded-lg transition-all text-sm font-semibold shadow-lg
+                bg-white text-[#5A8C22]
+                hover:bg-white/90
+                dark:bg-[#6FCD13] dark:text-background-dark
+                dark:hover:bg-[#8AFB2A]
+              "
             >
               Únete
             </button>
           </div>
         </div>
       )}
-
-      <style>{`
-        @keyframes slide-down {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-slide-down {
-          animation: slide-down 0.3s ease-out;
-        }
-      `}</style>
     </nav>
   );
 }

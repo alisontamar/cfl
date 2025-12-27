@@ -1,199 +1,134 @@
-import { Calendar, Zap, Gavel, Clock, Sparkles, ArrowRight } from 'lucide-react';
+import { CalendarCheck, Lock, Sun, Globe } from "lucide-react"
+import { Link } from "react-router-dom";
 
 export default function Modalities() {
+  const modalities = [
+    {
+      id: "mensual",
+      title: "Pasanaku Mensual",
+      description: "Ideal para planificación a largo plazo. Aportes una vez al mes, sin estrés.",
+      icon: CalendarCheck,
+      tag: "Más Popular",
+      className: "md:col-span-2 row-span-2",
+      color: "from-[#7AB82E]/20 to-[#5A8C22]/20",
+      iconColor: "text-white"
+    },
+    {
+      id: "diario",
+      title: "Diario",
+      description: "Micro-ahorro ágil para metas cortas.",
+      icon: Sun,
+      className: "",
+      color: "from-[#6FCD13]/15 to-[#5A8C22]/15",
+      iconColor: "text-[#FFD700]"
+    },
+    {
+      id: "semanal",
+      title: "Semanal",
+      description: "Flujo constante, resultados rápidos.",
+      icon: CalendarCheck,
+      className: "",
+      color: "from-[#0BA4B5]/15 to-[#7AB82E]/15",
+      iconColor: "text-white"
+    },
+    {
+      id: "privado",
+      title: "Privado",
+      description: "Solo con tus amigos o familia.",
+      icon: Lock,
+      className: "",
+      color: "from-[#5A8C22]/15 to-[#4A7C19]/15",
+      iconColor: "text-[#4ADE80]"
+    },
+    {
+      id: "publico",
+      title: "Abierto",
+      description: "Únete a grupos verificados por CFL.",
+      icon: Globe,
+      className: "",
+      color: "from-[#0BA4B5]/15 to-[#6FCD13]/15",
+      iconColor: "text-[#22D3EE]"
+    }
+  ];
+
   return (
-    <section id="modalidades" className="relative py-32 bg-white overflow-hidden">
+    <section id="modalidades" className="relative py-14 bg-gradient-to-br from-[#5A8C22] to-[#4A7C19] dark:from-[#1A3B0F] dark:to-[#0F2A14] overflow-hidden">
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-[500px] h-[500px] bg-[#7AB82E] opacity-5 rounded-full -top-48 left-1/4 animate-pulse"></div>
-        <div className="absolute w-96 h-96 bg-[#0BA4B5] opacity-5 rounded-full top-1/3 -right-32 animate-pulse" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute w-[450px] h-[450px] bg-[#7AB82E] opacity-5 rounded-full -bottom-48 right-1/3 animate-pulse" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute w-80 h-80 bg-[#0BA4B5] opacity-5 rounded-full bottom-1/4 -left-32 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#6FCD13]/10 rounded-full -top-48 left-4 animate-pulse"></div>
+        <div className="absolute w-[450px] h-[450px] bg-white/5 dark:bg-[#0BA4B5]/10 rounded-full -bottom-48 right-4 animate-pulse" style={{ animationDelay: '4s' }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in">
-          <div className="inline-flex items-center space-x-2 bg-[#7AB82E] bg-opacity-10 text-[#7AB82E] px-5 py-2 rounded-full text-sm font-light mb-6">
-            <Sparkles className="w-4 h-4" />
-            <span>Elige tu modalidad</span>
-          </div>
-          <h2 className="text-5xl lg:text-6xl font-light text-gray-900 mb-6 tracking-wide">
-            Modalidades de Ahorro
-          </h2>
-          <div className="w-24 h-1 bg-[#0BA4B5] mx-auto rounded-full mb-6"></div>
-          <p className="text-xl text-gray-600 font-light leading-relaxed">
-            Elige la modalidad que mejor se adapte a tus necesidades de ahorro y objetivos financieros.
-          </p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <header className="text-center mb-12">
+          <h2 className="text-5xl lg:text-6xl font-light text-white dark:text-white mb-4">Elige tu modalidad ideal</h2>
+          <p className="text-white/80 dark:text-slate-300 text-lg">Selecciona la forma de ahorro que mejor se adapte a tus necesidades</p>
+        </header>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[280px]">
+          {/* Pasanaku Mensual - Destacado */}
+          <Link 
+            to="/pasanaku-mensual" 
+            className="md:col-span-2 row-span-2 relative bg-gradient-to-br from-white/20 to-white/10 dark:from-[#6FCD13]/15 dark:to-[#0F2A14]/60 rounded-2xl p-8 overflow-hidden group border-2 border-white/30 dark:border-[#6FCD13]/30 hover:border-white/50 dark:hover:border-[#6FCD13]/50 transition-all duration-300 hover:scale-[1.02]"
+            aria-label="Pasanaku Mensual - Modalidad más popular"
+          >
+            <div className="absolute right-0 top-0 p-32 bg-white/10 dark:bg-[#6FCD13]/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-white/20 dark:group-hover:bg-[#6FCD13]/20 transition-colors"></div>
+            <div className="relative h-full flex flex-col justify-between z-10">
+              <div className="flex justify-between items-start">
+                <span className="bg-white/30 dark:bg-[#6FCD13] text-white dark:text-background-dark px-3 py-1 rounded-md text-xs font-bold uppercase backdrop-blur-sm">
+                  Más Popular
+                </span>
+                <CalendarCheck className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-2">Pasanaku Mensual</h3>
+                <p className="text-white/90 dark:text-slate-200 mb-4">Ideal para planificación a largo plazo. Aportes una vez al mes, sin estrés.</p>
+                <span className="inline-flex items-center text-white/80 dark:text-slate-300 text-sm">
+                  Comienza tu ahorro mensual →
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Modalidades pequeñas */}
+          {modalities.slice(1).map((modality) => (
+            <Link
+              key={modality.id}
+              to={`/pasanaku-${modality.id}`}
+              className={`${modality.className} bg-gradient-to-br ${modality.color} dark:from-[#0F2A14]/50 dark:to-[#081B0D]/50 rounded-2xl p-6 flex flex-col justify-between border border-white/20 dark:border-[#6FCD13]/20 hover:border-white/40 dark:hover:border-[#6FCD13]/40 transition-all duration-300 hover:scale-[1.03] group`}
+              aria-label={`Pasanaku ${modality.title}`}
+            >
+              <modality.icon className={`w-8 h-8 ${modality.iconColor}`} />
+              <div>
+                <h3 className="text-xl font-bold mb-1 text-white dark:text-white">{modality.title}</h3>
+                <p className="text-xs text-white/80 dark:text-slate-300">{modality.description}</p>
+              </div>
+            </Link>
+          ))}
+
+          {/* Tarjeta de Subasta - Destacada */}
+          <article 
+            className="md:col-span-2 bg-gradient-to-br from-[#0BA4B5] to-[#0A8E9C] dark:from-[#6FCD13] dark:to-[#5A8C22] rounded-2xl p-6 flex flex-row items-center justify-between border-2 border-white/30 dark:border-[#6FCD13]/30 overflow-hidden relative hover:scale-[1.02] transition-all duration-300"
+            aria-label="Pasanaku por Subasta - Alta demanda"
+          >
+            <div className="absolute right-0 top-0 bg-white/10 rounded-full blur-3xl"></div>
+            <div className="relative z-10 max-w-[60%]">
+              <h3 className="text-2xl font-bold text-white mb-1">Por Subasta</h3>
+              <p className="text-white/90 dark:text-white/80 mb-4">¿Necesitas el dinero antes? Oferta por tu turno.</p>
+              <span className="text-xs font-bold bg-white/20 px-2 py-1 rounded text-white border border-white/30">
+                Alta demanda
+              </span>
+            </div>
+            <Link 
+              to="/pasanaku-subastas" 
+              className="relative z-10 bg-white text-[#0BA4B5] dark:text-[#0F2A14] px-4 py-2 rounded-lg text-sm font-bold hover:bg-white/90 dark:hover:bg-white transition-colors"
+              aria-label="Explorar subastas"
+            >
+              Explorar
+            </Link>
+          </article>
         </div>
-
-        {/* Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {/* Card 1 - Mensual */}
-          <div className="group relative animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] rounded-3xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-            
-            <div className="relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 h-full flex flex-col">
-              {/* Badge */}
-              <div className="absolute top-6 right-6 bg-[#7AB82E] bg-opacity-10 text-[#7AB82E] text-xs font-medium px-3 py-1.5 rounded-full">
-                Muy Pronto
-              </div>
-
-              {/* Icon */}
-              <div className="bg-[#7AB82E] w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-                <Calendar className="w-8 h-8 text-white" />
-              </div>
-
-              {/* Title */}
-              <h3 className="text-2xl font-light text-gray-900 mb-3 tracking-wide">
-                Pasanaku Mensual
-              </h3>
-
-              {/* Tag */}
-              <div className="inline-block bg-[#7AB82E] text-white text-sm font-medium px-4 py-1.5 rounded-full mb-6 w-fit">
-                PasanaQR
-              </div>
-
-              {/* Description */}
-              <p className="text-gray-600 leading-relaxed mb-6 font-light flex-grow">
-                Sistema de ahorro mensual donde realizas un aporte cada mes y recibes el total del fondo en el período que te corresponda.
-              </p>
-
-              {/* Details */}
-              <div className="space-y-3 pt-6 border-t border-gray-100">
-                <div className="flex items-center space-x-3 text-gray-600">
-                  <div className="bg-[#7AB82E] bg-opacity-10 rounded-full p-1.5">
-                    <Clock className="w-4 h-4 text-[#7AB82E]" />
-                  </div>
-                  <span className="text-sm font-light">Ciclo: Mensual</span>
-                </div>
-                <div className="flex items-center space-x-3 text-gray-600">
-                  <div className="bg-[#7AB82E] bg-opacity-10 rounded-full p-1.5">
-                    <Calendar className="w-4 h-4 text-[#7AB82E]" />
-                  </div>
-                  <span className="text-sm font-light">Duración: Variable según grupo</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 - Semanal */}
-          <div className="group relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0BA4B5] to-[#0891A0] rounded-3xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-            
-            <div className="relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 h-full flex flex-col">
-              {/* Badge */}
-              <div className="absolute top-6 right-6 bg-[#0BA4B5] bg-opacity-10 text-[#0BA4B5] text-xs font-medium px-3 py-1.5 rounded-full">
-                Muy Pronto
-              </div>
-
-              {/* Icon */}
-              <div className="bg-[#0BA4B5] w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-                <Zap className="w-8 h-8 text-white" />
-              </div>
-
-              {/* Title */}
-              <h3 className="text-2xl font-light text-gray-900 mb-3 tracking-wide">
-                Pasanaku Semanal
-              </h3>
-
-              {/* Tag */}
-              <div className="inline-block bg-[#0BA4B5] text-white text-sm font-medium px-4 py-1.5 rounded-full mb-6 w-fit">
-                FastanaQR
-              </div>
-
-              {/* Description */}
-              <p className="text-gray-600 leading-relaxed mb-6 font-light flex-grow">
-                Modalidad acelerada con aportes semanales, ideal para quienes buscan un ahorro más dinámico y rotación rápida del fondo.
-              </p>
-
-              {/* Details */}
-              <div className="space-y-3 pt-6 border-t border-gray-100">
-                <div className="flex items-center space-x-3 text-gray-600">
-                  <div className="bg-[#0BA4B5] bg-opacity-10 rounded-full p-1.5">
-                    <Clock className="w-4 h-4 text-[#0BA4B5]" />
-                  </div>
-                  <span className="text-sm font-light">Ciclo: Semanal</span>
-                </div>
-                <div className="flex items-center space-x-3 text-gray-600">
-                  <div className="bg-[#0BA4B5] bg-opacity-10 rounded-full p-1.5">
-                    <Zap className="w-4 h-4 text-[#0BA4B5]" />
-                  </div>
-                  <span className="text-sm font-light">Modalidad rápida</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 - Subasta */}
-          <div className="group relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] rounded-3xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-            
-            <div className="relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 h-full flex flex-col">
-              {/* Badge */}
-              <div className="absolute top-6 right-6 bg-[#7AB82E] bg-opacity-10 text-[#7AB82E] text-xs font-medium px-3 py-1.5 rounded-full">
-                Muy Pronto
-              </div>
-
-              {/* Icon */}
-              <div className="bg-[#7AB82E] w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-                <Gavel className="w-8 h-8 text-white" />
-              </div>
-
-              {/* Title */}
-              <h3 className="text-2xl font-light text-gray-900 mb-3 tracking-wide">
-                Pasanaku por Subasta
-              </h3>
-
-              {/* Tag */}
-              <div className="inline-block bg-[#7AB82E] text-white text-sm font-medium px-4 py-1.5 rounded-full mb-6 w-fit">
-                AuctionQR
-              </div>
-
-              {/* Description */}
-              <p className="text-gray-600 leading-relaxed mb-6 font-light flex-grow">
-                Sistema de subasta donde los participantes pujan por recibir el fondo antes, añadiendo flexibilidad al ciclo tradicional.
-              </p>
-
-              {/* Details */}
-              <div className="space-y-3 pt-6 border-t border-gray-100">
-                <div className="flex items-center space-x-3 text-gray-600">
-                  <div className="bg-[#7AB82E] bg-opacity-10 rounded-full p-1.5">
-                    <Gavel className="w-4 h-4 text-[#7AB82E]" />
-                  </div>
-                  <span className="text-sm font-light">Basado en ofertas</span>
-                </div>
-                <div className="flex items-center space-x-3 text-gray-600">
-                  <div className="bg-[#7AB82E] bg-opacity-10 rounded-full p-1.5">
-                    <Clock className="w-4 h-4 text-[#7AB82E]" />
-                  </div>
-                  <span className="text-sm font-light">Flexible y dinámico</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Banner */}
-        
       </div>
-
-      <style>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in {
-          animation: fade-in 0.8s ease-out forwards;
-        }
-      `}</style>
     </section>
   );
 }
