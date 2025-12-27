@@ -1,5 +1,5 @@
 import{ BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import PasanakuMontly from "./pages/pasanakuMontly";
 import PasanakuDaily from "./pages/pasanakuDaily";
 import PasanakuWeekly from "./pages/pasanakuWeekly";
