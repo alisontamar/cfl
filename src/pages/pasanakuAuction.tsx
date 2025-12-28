@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import {
     ArrowLeft,
     Gavel,
@@ -13,7 +14,9 @@ import {
 import Contact from "../components/Contact";
 
 export default function PasanakuAuction() {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <Link

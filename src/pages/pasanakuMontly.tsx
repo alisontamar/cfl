@@ -1,7 +1,9 @@
 import { ArrowLeft, Computer, Gavel, Waypoints, BadgeDollarSign, CalendarCheck, ShieldCheck, Handshake, Lightbulb, Percent, Info, Car, Plane, School, Home } from "lucide-react";
-
+import { useEffect } from "react";
 export default function PasanakuMontly() {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         element?.scrollIntoView({ behavior: 'smooth' });

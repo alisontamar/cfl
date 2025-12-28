@@ -2,6 +2,7 @@ import { CalendarCheck, Lock, Sun, Globe } from "lucide-react"
 import { Link } from "react-router-dom";
 
 export default function Modalities() {
+  
   const modalities = [
     {
       id: "mensual",
@@ -55,6 +56,7 @@ export default function Modalities() {
       image: "publico.svg"
     }
   ];
+  
 
   return (
     <section id="modalidades" className="relative py-14 bg-gradient-to-br from-[#5A8C22] to-[#4A7C19] dark:from-[#1A3B0F] dark:to-[#0F2A14] overflow-hidden">

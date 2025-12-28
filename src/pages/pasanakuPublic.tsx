@@ -7,8 +7,11 @@ import {
     Info,
     TrendingUp
 } from "lucide-react";
-
+import { useEffect } from "react";
 export default function PasanakuPublic() {
+        useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <a

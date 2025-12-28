@@ -10,8 +10,12 @@ import {
     Car,
     HeartHandshake
 } from "lucide-react";
+import { useEffect } from "react";
 
 export default function PasanakuPrivate() {
+        useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <Link
