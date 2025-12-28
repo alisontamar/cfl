@@ -88,7 +88,7 @@ export default function AppMobileSection() {
                             <h3 className="text-xl md:text-2xl font-bold text-white dark:text-[#E8F4F8] mb-3 flex items-center gap-3">
                                 Próximamente: App CFL
                                 <span className="text-xs bg-[#6FCD13] text-background-dark dark:bg-[#7AFF6C] dark:text-[#062D3D] px-3 py-1 rounded-full font-bold">
-                                    BETA
+                                    Muy Pronto
                                 </span>
                             </h3>
                             <p className="text-white/80 dark:text-[#A8C5D1] text-sm md:text-base">
@@ -98,11 +98,11 @@ export default function AppMobileSection() {
                         
                         <div className="flex flex-col sm:flex-row gap-3 max-w-md">
                             <a 
-                                href="mailto:dreamersb648@gmail.com?subject=Solicitud%20Acceso%20Beta%20CFL&body=Hola,%20me%20interesa%20unirme%20a%20la%20lista%20de%20espera%20de%20la%20app%20CFL."
+                                href="mailto:capitalforlifecfl@gmail.com?subject=Solicitud%20Acceso%20Beta%20CFL&body=Hola,%20me%20interesa%20unirme%20a%20la%20lista%20de%20espera%20de%20la%20app%20CFL."
                                 className="bg-white text-[#5A8C22] dark:bg-transparent dark:text-[#7AFF6C] dark:border-2 dark:border-[#0D5269] px-6 py-3 rounded-lg text-sm font-bold hover:bg-white/90 dark:hover:bg-[#0D5269]/30 dark:hover:border-[#00E5FF] transition-all text-center whitespace-nowrap"
-                                aria-label="Unirse a la lista de espera de la app beta"
+                                aria-label="Unirse a cfl"
                             >
-                                Unirme a la espera
+                                Unirme a cfl
                             </a>
                         </div>
                     </div>
