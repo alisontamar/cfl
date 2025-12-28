@@ -54,7 +54,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-background-dark transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-[#062D3D] transition-colors duration-300">
       <Navbar />
       <Hero />
       <Pasanaku />
@@ -70,7 +70,7 @@ export default function Home() {
       {isScrolled && (
         <button
           onClick={scrollToTop}
-          className="fixed right-4 bottom-4 bg-white dark:bg-[#6FCD13] text-[#5A8C22] dark:text-background-dark p-3 rounded-full hover:scale-110 transition-all shadow-lg z-50 group"
+          className="fixed right-4 bottom-4 bg-white dark:bg-[#0D5269] text-[#5A8C22] dark:text-[#7AFF6C] p-3 rounded-full hover:scale-110 transition-all shadow-lg z-50 group border-2 border-transparent dark:border-[#0D5269]"
           aria-label="Volver arriba"
         >
           <ArrowUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
@@ -80,7 +80,7 @@ export default function Home() {
       {/* Dark mode toggle button */}
       <button
         onClick={toggleDarkMode}
-        className="fixed left-4 bottom-4 bg-white dark:bg-[#6FCD13] text-[#5A8C22] dark:text-background-dark p-3 rounded-full hover:scale-110 transition-all shadow-lg z-50 group"
+        className="fixed left-4 bottom-4 bg-white dark:bg-[#0D5269] text-[#5A8C22] dark:text-[#7AFF6C] p-3 rounded-full hover:scale-110 transition-all shadow-lg z-50 group border-2 border-transparent dark:border-[#0D5269]"
         aria-label={isDarkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
       >
         {isDarkMode ? (

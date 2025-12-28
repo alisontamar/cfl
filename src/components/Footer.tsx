@@ -5,18 +5,18 @@ export default function Footer() {
 
   return (
     <footer
-      className="relative bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#0F2A14] dark:to-[#081B0D] text-white overflow-hidden"
+      className="relative bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#0B4A5E] dark:to-[#062D3D] text-white overflow-hidden"
       aria-label="Pie de página"
     >
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-        <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#6FCD13]/10 rounded-full -bottom-48 -left-32 animate-pulse"></div>
+        <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full -bottom-48 -left-32 animate-pulse"></div>
         <div 
-          className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#0BA4B5]/15 rounded-full -bottom-32 right-1/4 animate-pulse" 
+          className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full -bottom-32 right-1/4 animate-pulse" 
           style={{ animationDelay: '1s' }}
         ></div>
         <div 
-          className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#6FCD13]/10 rounded-full top-1/2 -right-48 animate-pulse" 
+          className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full top-1/2 -right-48 animate-pulse" 
           style={{ animationDelay: '2s' }}
         ></div>
       </div>
@@ -40,11 +40,11 @@ export default function Footer() {
                 className="w-12 h-12 object-contain group-hover:scale-105 transition-transform"
               />
               <div>
-                <h2 className="text-xl font-bold text-white dark:text-white">Capital For Life</h2>
-                <p className="text-sm text-white/80 dark:text-white/70">Ahorro Inteligente</p>
+                <h2 className="text-xl font-bold text-white dark:text-[#E8F4F8]">Capital For Life</h2>
+                <p className="text-sm text-white/80 dark:text-[#A8C5D1]">Ahorro Inteligente</p>
               </div>
             </div>
-            <p className="text-white/90 dark:text-white/80 text-sm leading-relaxed max-w-lg">
+            <p className="text-white/90 dark:text-[#A8C5D1] text-sm leading-relaxed max-w-lg">
               Transformando el ahorro tradicional con tecnología moderna.
               Tu futuro financiero comienza aquí con nuestra comunidad de confianza.
             </p>
@@ -52,12 +52,12 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-white dark:text-white mb-4 text-base">Enlaces</h3>
+            <h3 className="font-semibold text-white dark:text-[#E8F4F8] mb-4 text-base">Enlaces</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#funciona"
-                  className="text-white/80 dark:text-white/70 hover:text-white text-sm transition-colors hover:underline"
+                  className="text-white/80 dark:text-[#A8C5D1] hover:text-white dark:hover:text-[#E8F4F8] text-sm transition-colors hover:underline"
                   aria-label="Ver cómo funciona"
                 >
                   Cómo Funciona
@@ -66,7 +66,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#beneficios"
-                  className="text-white/80 dark:text-white/70 hover:text-white text-sm transition-colors hover:underline"
+                  className="text-white/80 dark:text-[#A8C5D1] hover:text-white dark:hover:text-[#E8F4F8] text-sm transition-colors hover:underline"
                   aria-label="Ver beneficios"
                 >
                   Beneficios
@@ -75,7 +75,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#modalidades"
-                  className="text-white/80 dark:text-white/70 hover:text-white text-sm transition-colors hover:underline"
+                  className="text-white/80 dark:text-[#A8C5D1] hover:text-white dark:hover:text-[#E8F4F8] text-sm transition-colors hover:underline"
                   aria-label="Ver modalidades"
                 >
                   Modalidades
@@ -84,7 +84,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contacto"
-                  className="text-white/80 dark:text-white/70 hover:text-white text-sm transition-colors hover:underline"
+                  className="text-white/80 dark:text-[#A8C5D1] hover:text-white dark:hover:text-[#E8F4F8] text-sm transition-colors hover:underline"
                   aria-label="Ir a contacto"
                 >
                   Contacto
@@ -95,9 +95,9 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-white/20 dark:bg-white/10 mb-6" aria-hidden="true"></div>
+        <div className="h-px bg-white/20 dark:bg-[#0D5269]/30 mb-6" aria-hidden="true"></div>
 
-        <p className="text-white/70 dark:text-white/60 text-sm text-center">
+        <p className="text-white/70 dark:text-[#A8C5D1] text-sm text-center">
           &copy; {new Date().getFullYear()} Capital For Life. Todos los derechos reservados.
         </p>
       </div>

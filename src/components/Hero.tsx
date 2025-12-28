@@ -6,20 +6,20 @@ export default function Hero() {
       relative min-h-screen flex items-center overflow-hidden
       bg-gradient-to-br
       from-[#7AB82E] to-[#5A8C22]
-      dark:from-[#0F2A14] dark:to-[#081B0D]
+      dark:from-[#0B4A5E] dark:to-[#062D3D]
     ">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="
           absolute w-96 h-96 rounded-full -top-48 -left-48 animate-pulse
           bg-white/5
-          dark:bg-[#6FCD13]/10
+          dark:bg-[#7AFF6C]/10
         " />
         <div
           className="
             absolute w-[500px] h-[500px] rounded-full -bottom-64 -right-64 animate-pulse
             bg-white/5
-            dark:bg-[#0BA4B5]/10
+            dark:bg-[#00E5FF]/10
           "
           style={{ animationDelay: '3s' }}
         />
@@ -33,16 +33,16 @@ export default function Hero() {
             <div className="
               inline-flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm animate-fade-in
               bg-white/20
-              dark:bg-[#6FCD13]/15
+              dark:bg-[#0D5269]/60
             ">
-              <Sparkles className="w-4 h-4" />
-              <span>Ahorro Inteligente</span>
+              <Sparkles className="w-4 h-4 dark:text-[#7AFF6C]" />
+              <span className="dark:text-[#E8F4F8]">Ahorro Inteligente</span>
             </div>
 
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <h1 className="text-7xl lg:text-8xl font-bold leading-none tracking-tight">
-                <span className="block">Capital</span>
-                <span className="block text-[#E9F7D9] dark:text-[#6FCD13]">
+                <span className="block dark:text-[#E8F4F8]">Capital</span>
+                <span className="block text-[#E9F7D9] dark:text-[#7AFF6C]">
                   For Life
                 </span>
               </h1>
@@ -50,13 +50,13 @@ export default function Hero() {
               <div className="
                 w-20 h-1 rounded-full
                 bg-[#0BA4B5]
-                dark:bg-[#6FCD13]
+                dark:bg-[#00E5FF]
               " />
 
               <p className="
                 text-xl max-w-lg leading-relaxed
                 text-white/90
-                dark:text-slate-300
+                dark:text-[#A8C5D1]
               ">
                 Bienvenido a Capital For Life, el sistema que rescata la tradición del ahorro colectivo,
                 potenciado por la seguridad digital y la máxima confiabilidad.
@@ -68,8 +68,8 @@ export default function Hero() {
                 group px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 shadow-2xl
                 bg-white text-[#5A8C22]
                 hover:bg-white/90
-                dark:bg-[#6FCD13] dark:text-background-dark
-                dark:hover:bg-[#8AFB2A]
+                dark:bg-[#7AFF6C] dark:text-[#062D3D]
+                dark:hover:bg-[#8FFF7C]
                 flex items-center justify-center space-x-2
               ">
                 <span>Comienza Ahora</span>
@@ -80,30 +80,30 @@ export default function Hero() {
                 bg-transparent border-2 px-8 py-4 rounded-full font-semibold transition-all
                 border-white text-white
                 hover:bg-white hover:text-[#5A8C22]
-                dark:border-[#6FCD13] dark:text-[#6FCD13]
-                dark:hover:bg-[#6FCD13] dark:hover:text-background-dark
-flex items-center justify-center space-x-2
-">
+                dark:border-[#0D5269] dark:text-[#7AFF6C]
+                dark:hover:bg-[#0D5269] dark:hover:text-[#E8F4F8]
+                flex items-center justify-center space-x-2
+              ">
                 Conocer más
               </a>
             </div>
 
             <div className="flex items-center space-x-6 pt-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
               <div className="flex -space-x-3">
-                <div className="w-12 h-12 rounded-full bg-white border-2 border-[#5A8C22] dark:border-[#6FCD13]" />
-                <div className="w-12 h-12 rounded-full bg-[#0BA4B5] border-2 border-[#5A8C22] dark:border-[#6FCD13]" />
+                <div className="w-12 h-12 rounded-full bg-white border-2 border-[#5A8C22] dark:bg-[#0D5269] dark:border-[#00E5FF]" />
+                <div className="w-12 h-12 rounded-full bg-[#0BA4B5] border-2 border-[#5A8C22] dark:bg-[#083D52] dark:border-[#00E5FF]" />
                 <div className="
                   w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm
                   bg-white text-[#5A8C22] border-2 border-[#5A8C22]
-                  dark:bg-[#081B0D] dark:text-[#6FCD13] dark:border-[#6FCD13]
+                  dark:bg-[#0D5269] dark:text-[#7AFF6C] dark:border-[#00E5FF]
                 ">
                   2K+
                 </div>
               </div>
 
-              <div className="text-white/90 dark:text-slate-300">
+              <div className="text-white/90 dark:text-[#E8F4F8]">
                 <p className="font-semibold">Descubra el Pasanaku</p>
-                <p className="text-sm text-white/70 dark:text-slate-400">
+                <p className="text-sm text-white/70 dark:text-[#8BA8B5]">
                   Únete a la comunidad de ahorro colectivo
                 </p>
               </div>
@@ -115,7 +115,7 @@ flex items-center justify-center space-x-2
             <div className="
               absolute inset-0 rounded-3xl blur-3xl opacity-20
               bg-gradient-to-br from-white to-gray-100
-              dark:bg-gray-600 dark:to-transparent
+              dark:bg-[#0D5269] dark:to-transparent
             " />
 
             <div className="relative">
