@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
     ArrowLeft,
     Globe,
@@ -8,67 +7,77 @@ import {
     Info,
     TrendingUp
 } from "lucide-react";
-import Contact from "../components/Contact";
 
 export default function PasanakuPublic() {
-
     return (
         <>
-            <Link
-                to="/"
-                className="rounded-full w-max absolute top-6 left-6 p-2 hover:bg-stone-200 dark:hover:bg-white/10 transition-colors z-20"
+            <a
+                href="/"
+                className="rounded-full w-max absolute top-6 left-6 p-2 hover:bg-white/20 dark:hover:bg-white/10 transition-colors z-20 inline-flex"
             >
-                <ArrowLeft className="w-6 h-6 text-gray-700 dark:text-white" />
-            </Link>
+                <ArrowLeft className="w-6 h-6 text-white" />
+            </a>
 
             {/* HERO */}
-            <section className="relative flex flex-col h-screen items-center justify-center overflow-hidden dark:bg-gradient-to-b from-surface-dark to-background-dark">
-                <div className="absolute inset-0 z-0 dark:opacity-60">
-                    <div className="absolute top-20 right-1/3 w-[28rem] h-[28rem] bg-primary/30 rounded-full blur-[140px]" />
+            <section className="relative flex flex-col h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#0F2A14] dark:to-[#081B0D]">
+                {/* Animated background circles */}
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#6FCD13]/10 rounded-full -top-48 -left-32 animate-pulse" />
+                    <div 
+                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#0BA4B5]/15 rounded-full top-20 right-1/3 animate-pulse" 
+                        style={{ animationDelay: '1s' }}
+                    />
+                    <div 
+                        className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#6FCD13]/10 rounded-full bottom-1/4 -right-48 animate-pulse" 
+                        style={{ animationDelay: '2s' }}
+                    />
+                    <div 
+                        className="absolute top-20 right-1/3 w-[28rem] h-[28rem] bg-white/10 dark:bg-[#6FCD13]/20 rounded-full blur-[140px]" 
+                    />
                 </div>
 
-                <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6">
-                    <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider">
+                <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6 px-4">
+                    <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-white/30 bg-white/10 text-white text-xs font-semibold uppercase tracking-wider">
                         <Globe className="w-5 h-5" />
                         Comunidad Abierta
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-extrabold text-warm-text dark:text-white">
+                    <h1 className="text-5xl md:text-7xl font-extrabold text-white">
                         Pasanaku Público
                     </h1>
 
-                    <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                    <p className="text-lg md:text-xl text-white/90 dark:text-white/80 max-w-3xl mx-auto">
                         Únete a un Pasanaku abierto y ahorra con personas que comparten el mismo objetivo.
                     </p>
                 </div>
             </section>
 
             {/* COMO FUNCIONA */}
-            <section className="py-20 px-4 bg-white dark:bg-surface-dark">
-                     <h2 className="text-5xl lg:text-6xl font-light text-gray-900 dark:text-gray-200 text-center mb-12">
-                         Cómo funciona
-                     </h2>
+            <section className="py-20 px-4 bg-white dark:bg-[#0F2A14]">
+                <h2 className="text-5xl lg:text-6xl font-light text-gray-900 dark:text-white text-center mb-12">
+                    Cómo funciona
+                </h2>
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div className="p-6 rounded-2xl border border-stone-200 dark:border-white/10">
-                        <Users className="w-8 h-8 text-primary mx-auto mb-3" />
-                        <h3 className="font-bold text-warm-text dark:text-white">Acceso abierto</h3>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">
+                    <div className="p-6 rounded-2xl border border-stone-200 dark:border-white/10 bg-white dark:bg-[#081B0D]">
+                        <Users className="w-8 h-8 text-[#7AB82E] dark:text-[#6FCD13] mx-auto mb-3" />
+                        <h3 className="font-bold text-gray-900 dark:text-white">Acceso abierto</h3>
+                        <p className="text-sm text-slate-500 dark:text-white/70">
                             Cualquier persona puede unirse mientras haya cupos.
                         </p>
                     </div>
 
-                    <div className="p-6 rounded-2xl border border-stone-200 dark:border-white/10">
-                        <BadgeDollarSign className="w-8 h-8 text-primary mx-auto mb-3" />
-                        <h3 className="font-bold text-warm-text dark:text-white">Reglas visibles</h3>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">
+                    <div className="p-6 rounded-2xl border border-stone-200 dark:border-white/10 bg-white dark:bg-[#081B0D]">
+                        <BadgeDollarSign className="w-8 h-8 text-[#7AB82E] dark:text-[#6FCD13] mx-auto mb-3" />
+                        <h3 className="font-bold text-gray-900 dark:text-white">Reglas visibles</h3>
+                        <p className="text-sm text-slate-500 dark:text-white/70">
                             Condiciones claras antes de unirte.
                         </p>
                     </div>
 
-                    <div className="p-6 rounded-2xl border border-stone-200 dark:border-white/10">
-                        <ShieldCheck className="w-8 h-8 text-primary mx-auto mb-3" />
-                        <h3 className="font-bold text-warm-text dark:text-white">Sistema confiable</h3>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">
+                    <div className="p-6 rounded-2xl border border-stone-200 dark:border-white/10 bg-white dark:bg-[#081B0D]">
+                        <ShieldCheck className="w-8 h-8 text-[#7AB82E] dark:text-[#6FCD13] mx-auto mb-3" />
+                        <h3 className="font-bold text-gray-900 dark:text-white">Sistema confiable</h3>
+                        <p className="text-sm text-slate-500 dark:text-white/70">
                             Pagos confirmados y seguimiento continuo.
                         </p>
                     </div>
@@ -76,9 +85,22 @@ export default function PasanakuPublic() {
             </section>
 
             {/* BENEFICIOS */}
-            <section className="py-20 px-4 dark:bg-gradient-to-b from-surface-dark to-background-dark">
-                <div className="max-w-6xl mx-auto text-center">
-                    <h2 className="text-5xl lg:text-6xl font-light text-gray-900 dark:text-gray-200 text-center mb-12">
+            <section className="relative py-20 px-4 bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#0F2A14] dark:to-[#081B0D] overflow-hidden">
+                {/* Animated background circles */}
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#6FCD13]/10 rounded-full top-1/3 -left-32 animate-pulse" />
+                    <div 
+                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#0BA4B5]/15 rounded-full bottom-1/4 right-1/4 animate-pulse" 
+                        style={{ animationDelay: '1.5s' }}
+                    />
+                    <div 
+                        className="absolute w-[400px] h-[400px] bg-white/5 dark:bg-[#6FCD13]/10 rounded-full -bottom-32 -right-32 animate-pulse" 
+                        style={{ animationDelay: '2.5s' }}
+                    />
+                </div>
+
+                <div className="max-w-6xl mx-auto text-center relative z-10">
+                    <h2 className="text-5xl lg:text-6xl font-light text-white mb-12">
                         Elige tu modalidad ideal
                     </h2>
 
@@ -90,16 +112,26 @@ export default function PasanakuPublic() {
                 </div>
             </section>
 
-            <Contact />
+            {/* Contact placeholder - reemplaza con tu componente Contact */}
+            <section className="py-20 px-4 bg-white dark:bg-[#0F2A14]">
+                <div className="max-w-4xl mx-auto text-center">
+                    <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                        ¿Listo para empezar?
+                    </h2>
+                    <p className="text-slate-600 dark:text-white/70 mb-8">
+                        Únete a un Pasanaku público hoy
+                    </p>
+                </div>
+            </section>
         </>
     );
 }
 
 function Card({ icon: Icon, text }: any) {
     return (
-        <div className="bg-white dark:bg-surface-dark border border-stone-200 dark:border-white/10 p-6 rounded-2xl">
-            <Icon className="w-8 h-8 text-primary mx-auto mb-3" />
-            <p className="text-slate-600 dark:text-slate-300 text-center">{text}</p>
+        <div className="bg-white/95 dark:bg-[#081B0D] border border-white/20 dark:border-white/10 p-6 rounded-2xl backdrop-blur-sm">
+            <Icon className="w-8 h-8 text-[#7AB82E] dark:text-[#6FCD13] mx-auto mb-3" />
+            <p className="text-slate-600 dark:text-white/70 text-center">{text}</p>
         </div>
     );
 }

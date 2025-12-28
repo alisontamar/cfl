@@ -82,7 +82,8 @@ export default function Hero() {
                 hover:bg-white hover:text-[#5A8C22]
                 dark:border-[#6FCD13] dark:text-[#6FCD13]
                 dark:hover:bg-[#6FCD13] dark:hover:text-background-dark
-              ">
+flex items-center justify-center space-x-2
+">
                 Conocer más
               </a>
             </div>
