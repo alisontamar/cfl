@@ -132,7 +132,7 @@ export default function Navbar() {
           border-white/10 dark:border-[#0D5269]/30
         ">
           <div className="px-4 py-4 space-y-2">
-            {['como-funciona', 'beneficios', 'modalidades'].map((id, i) => (
+            {['funciona', 'beneficios', 'modalidades'].map((id, i) => (
               <button
                 key={i}
                 onClick={() => scrollToSection(id)}
@@ -144,7 +144,7 @@ export default function Navbar() {
                   px-3 py-2 rounded-lg transition-all text-sm font-medium
                 "
               >
-                {id === 'como-funciona' ? 'Cómo Funciona' : id.charAt(0).toUpperCase() + id.slice(1)}
+                {id === 'funciona' ? 'Cómo Funciona' : id.charAt(0).toUpperCase() + id.slice(1)}
               </button>
             ))}
 
