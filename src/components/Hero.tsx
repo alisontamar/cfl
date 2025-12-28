@@ -64,7 +64,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <a href="mailto:dreamersb648@gmail.com?subject=Solicitud%20Acceso%20Beta%20CFL&body=Hola,%20me%20interesa%20unirme%20a%20la%20lista%20de%20espera%20de%20la%20app%20CFL." className="
+              <a href="mailto:capitalforlifecfl@gmail.com?subject=Solicitud%20Acceso%20Beta%20CFL&body=Hola,%20me%20interesa%20unirme%20a%20la%20lista%20de%20espera%20de%20la%20app%20CFL." className="
                 group px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 shadow-2xl
                 bg-white text-[#5A8C22]
                 hover:bg-white/90
