@@ -11,7 +11,8 @@ export default function Modalities() {
       tag: "Más Popular",
       className: "md:col-span-2 row-span-2",
       color: "from-[#7AB82E]/20 to-[#5A8C22]/20",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      image: "mensual.svg"
     },
     {
       id: "diario",
@@ -20,7 +21,8 @@ export default function Modalities() {
       icon: Sun,
       className: "",
       color: "from-[#6FCD13]/15 to-[#5A8C22]/15",
-      iconColor: "text-[#FFD700]"
+      iconColor: "text-[#FFD700]",
+      image: "diario.svg"
     },
     {
       id: "semanal",
@@ -29,7 +31,8 @@ export default function Modalities() {
       icon: CalendarCheck,
       className: "",
       color: "from-[#0BA4B5]/15 to-[#7AB82E]/15",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      image: "semanal.svg"
     },
     {
       id: "privado",
@@ -38,7 +41,8 @@ export default function Modalities() {
       icon: Lock,
       className: "",
       color: "from-[#5A8C22]/15 to-[#4A7C19]/15",
-      iconColor: "text-[#4ADE80]"
+      iconColor: "text-[#4ADE80]",
+      image: "privado.svg"
     },
     {
       id: "publico",
@@ -47,7 +51,8 @@ export default function Modalities() {
       icon: Globe,
       className: "",
       color: "from-[#0BA4B5]/15 to-[#6FCD13]/15",
-      iconColor: "text-[#22D3EE]"
+      iconColor: "text-[#22D3EE]",
+      image: "publico.svg"
     }
   ];
 
@@ -72,6 +77,7 @@ export default function Modalities() {
             className="md:col-span-2 row-span-2 relative bg-gradient-to-br from-white/20 to-white/10 dark:from-[#6FCD13]/15 dark:to-[#0F2A14]/60 rounded-2xl p-8 overflow-hidden group border-2 border-white/30 dark:border-[#6FCD13]/30 hover:border-white/50 dark:hover:border-[#6FCD13]/50 transition-all duration-300 hover:scale-[1.02]"
             aria-label="Pasanaku Mensual - Modalidad más popular"
           >
+            <div className="absolute inset-0 bg-[url('/mensual.svg')] bg-cover bg-center opacity-65 group-hover:opacity-95 transition-opacity duration-500" aria-hidden="true" />
             <div className="absolute right-0 top-0 p-32 bg-white/10 dark:bg-[#6FCD13]/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-white/20 dark:group-hover:bg-[#6FCD13]/20 transition-colors"></div>
             <div className="relative h-full flex flex-col justify-between z-10">
               <div className="flex justify-between items-start">
@@ -91,15 +97,21 @@ export default function Modalities() {
           </Link>
 
           {/* Modalidades pequeñas */}
-          {modalities.slice(1).map((modality) => (
+             {modalities.slice(1).map((modality) => (
             <Link
               key={modality.id}
               to={`/pasanaku-${modality.id}`}
-              className={`${modality.className} bg-gradient-to-br ${modality.color} dark:from-[#0F2A14]/50 dark:to-[#081B0D]/50 rounded-2xl p-6 flex flex-col justify-between border border-white/20 dark:border-[#6FCD13]/20 hover:border-white/40 dark:hover:border-[#6FCD13]/40 transition-all duration-300 hover:scale-[1.03] group`}
+              className={`${modality.className} relative rounded-2xl p-6 flex flex-col justify-between border border-white/20 dark:border-[#6FCD13]/20 hover:border-white/40 dark:hover:border-[#6FCD13]/40 transition-all duration-300 hover:scale-[1.03] group overflow-hidden`}
               aria-label={`Pasanaku ${modality.title}`}
             >
-              <modality.icon className={`w-8 h-8 ${modality.iconColor}`} />
-              <div>
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ backgroundImage: `url('/${modality.image}')` }}
+                aria-hidden="true" 
+              />
+              <div className={`absolute inset-0 bg-gradient-to-br ${modality.color} dark:from-[#0F2A14]/30 dark:to-[#081B0D]/30`} aria-hidden="true" />
+              <modality.icon className={`w-8 h-8 ${modality.iconColor} relative z-10`} />
+              <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-1 text-white dark:text-white">{modality.title}</h3>
                 <p className="text-xs text-white/80 dark:text-slate-300">{modality.description}</p>
               </div>

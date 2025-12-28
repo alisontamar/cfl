@@ -40,10 +40,10 @@ export default function Benefits() {
             aria-labelledby="mision-title"
           >
             <div
-              className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618044613393-8bd0236e7b6e?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+            className="absolute inset-0 bg-[url('/mision.svg')] bg-cover bg-center opacity-50 group-hover:opacity-100 transition-opacity duration-500"
               aria-hidden="true"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0F2A14] via-[#0F2A14]/80 to-transparent dark:from-[#081B0D] dark:via-[#081B0D]/80" aria-hidden="true" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0F2A14] via-[#0F2A14]/40 to-transparent dark:from-[#081B0D] dark:via-[#081B0D]/80" aria-hidden="true" />
 
             <div className="relative z-10">
               <h3 id="mision-title" className="text-2xl md:text-3xl font-bold mb-4 text-white">
@@ -60,10 +60,10 @@ export default function Benefits() {
             aria-labelledby="vision-title"
           >
             <div
-              className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618044613393-8bd0236e7b6e?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+              className="absolute inset-0 bg-[url('/vision.svg')] bg-cover bg-center opacity-50 group-hover:opacity-100 transition-opacity duration-500"
               aria-hidden="true"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0F2A14] via-[#0F2A14]/80 to-transparent dark:from-[#081B0D] dark:via-[#081B0D]/80" aria-hidden="true" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0F2A14] via-[#0F2A14]/40 to-transparent dark:from-[#081B0D] dark:via-[#081B0D]/30" aria-hidden="true" />
 
             <div className="relative z-10">
               <h3 id="mision-title" className="text-2xl md:text-3xl font-bold mb-4 text-white">

@@ -123,18 +123,18 @@ export default function AppMobileSection() {
                             {/* Header */}
                             <header className="flex justify-between items-center mb-8">
                                 <div>
-                                    <p className="text-xs text-slate-400">Buenos días,</p>
-                                    <p className="font-bold text-white"> Bienvenido a CFL</p>
+                                    <p className="text-xs text-slate-400 dark:text-slate-500">Buenos días,</p>
+                                    <p className="font-bold text-white dark:text-slate-200"> Bienvenido a CFL</p>
                                 </div>
                                 <div className="size-8 rounded-full bg-gradient-to-br from-[#6FCD13] to-[#0BA4B5]" aria-hidden="true"></div>
                             </header>
                             
                             {/* Savings Card */}
-                            <article className="bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] p-5 rounded-2xl mb-8 shadow-lg">
-                                <p className="text-xs text-white/80 font-bold mb-1">Total Ahorrado</p>
-                                <h3 className="text-3xl font-black text-white mb-4">Bs. 2,450.00</h3>
+                            <article className="bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#6FCD13] dark:to-[#5A8C22] p-5 rounded-2xl mb-8 shadow-lg">
+                                <p className="text-xs text-white/80 dark:text-white/90 font-bold mb-1">Total Ahorrado</p>
+                                <h3 className="text-3xl font-black text-white dark:text-white mb-4">Bs. 2,450.00</h3>
                                 <div className="flex gap-2">
-                                    <span className="bg-white/20 px-3 py-1 rounded-full text-[10px] text-white font-bold">
+                                    <span className="bg-white/20 dark:bg-white/30 px-3 py-1 rounded-full text-[10px] text-white dark:text-white font-bold">
                                         3 Pasanakus Activos
                                     </span>
                                 </div>
@@ -142,38 +142,38 @@ export default function AppMobileSection() {
                             
                             {/* Next Turns */}
                             <section>
-                                <h4 className="text-sm font-bold text-slate-400 mb-4">Próximos Turnos</h4>
+                                <h4 className="text-sm font-bold text-slate-400 dark:text-slate-500 mb-4">Próximos Turnos</h4>
                                 <div className="space-y-3">
-                                    <article className="bg-white/5 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors">
-                                        <div className="size-10 rounded-full bg-[#6FCD13]/20 flex items-center justify-center text-[#6FCD13]">
+                                    <article className="bg-white/5 dark:bg-white/10 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 dark:hover:bg-white/15 transition-colors">
+                                        <div className="size-10 rounded-full bg-[#6FCD13]/20 dark:bg-[#6FCD13]/30 flex items-center justify-center text-[#6FCD13] dark:text-[#8AFB2A]">
                                             <CalendarCheck className="w-6 h-6" />
                                         </div>
                                         <div className="flex-1">
-                                            <p className="text-sm font-bold text-white">Viaje Amigos</p>
-                                            <p className="text-xs text-slate-400">Te toca: 15 Oct</p>
+                                            <p className="text-sm font-bold text-white dark:text-slate-200">Viaje Amigos</p>
+                                            <p className="text-xs text-slate-400 dark:text-slate-500">Te toca: 15 Oct</p>
                                         </div>
-                                        <span className="text-sm font-bold text-[#6FCD13]">$500</span>
+                                        <span className="text-sm font-bold text-[#6FCD13] dark:text-[#8AFB2A]">$500</span>
                                     </article>
                                     
-                                    <article className="bg-white/5 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors">
-                                        <div className="size-10 rounded-full bg-[#0BA4B5]/20 flex items-center justify-center text-[#0BA4B5]">
+                                    <article className="bg-white/5 dark:bg-white/10 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 dark:hover:bg-white/15 transition-colors">
+                                        <div className="size-10 rounded-full bg-[#0BA4B5]/20 dark:bg-[#0BA4B5]/30 flex items-center justify-center text-[#0BA4B5] dark:text-[#0BA4B5]">
                                             <Gavel className="w-6 h-6" />
                                         </div>
                                         <div className="flex-1">
-                                            <p className="text-sm font-bold text-white">Subasta Oficina</p>
-                                            <p className="text-xs text-slate-400">Oferta actual: $20</p>
+                                            <p className="text-sm font-bold text-white dark:text-slate-200">Subasta Oficina</p>
+                                            <p className="text-xs text-slate-400 dark:text-slate-500">Oferta actual: $20</p>
                                         </div>
-                                        <span className="text-sm font-bold text-slate-300">Pend.</span>
+                                        <span className="text-sm font-bold text-slate-300 dark:text-slate-400">Pend.</span>
                                     </article>
                                 </div>
                             </section>
                             
                             {/* Floating Action Button */}
                             <button 
-                                className="absolute bottom-6 right-6 size-12 bg-gradient-to-br from-[#6FCD13] to-[#7AB82E] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                                className="absolute bottom-6 right-6 size-12 bg-gradient-to-br from-[#6FCD13] to-[#7AB82E] dark:from-[#8AFB2A] dark:to-[#6FCD13] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
                                 aria-label="Crear nuevo pasanaku"
                             >
-                                <Plus className="w-6 h-6 text-white" />
+                                <Plus className="w-6 h-6 text-white dark:text-[#0F2A14]" />
                             </button>
                         </div>
                     </div>
