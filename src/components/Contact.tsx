@@ -19,7 +19,7 @@ export default function Contact() {
       description: 'También puedes escribirnos por correo y te responderemos a la brevedad posible.',
       icon: Mail,
       actionText: 'Enviar correo',
-      href: 'mailto:dreamersb648@gmail.com',
+      href: 'mailto:capitalforlifecfl@gmail.com',
       color: 'from-[#0BA4B5]/20 to-[#7AB82E]/20',
       delay: '0.2s'
     }
