@@ -1,4 +1,4 @@
-import{ BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import PasanakuMontly from "./pages/pasanakuMontly";
 import PasanakuDaily from "./pages/pasanakuDaily";
@@ -6,6 +6,7 @@ import PasanakuWeekly from "./pages/pasanakuWeekly";
 import PasanakuAuction from "./pages/pasanakuAuction";
 import PasanakuPrivate from "./pages/pasanakuPrivate";
 import PasanakuPublic from "./pages/pasanakuPublic";
+import { Analytics } from "@vercel/analytics/react";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     },
     {
       title: "semanal",
-      component: PasanakuWeekly 
+      component: PasanakuWeekly
     },
     {
       title: "subastas",
@@ -45,6 +46,7 @@ function App() {
         ))}
         <Route path="*" element={<Home />} />
       </Routes>
+      <Analytics mode="production" />
     </Router>
   );
 }
