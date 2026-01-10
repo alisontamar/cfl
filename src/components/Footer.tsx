@@ -36,11 +36,11 @@ export default function Footer() {
             >
               <img
                 src="/logo.webp"
-                alt="Capital For Life Logo"
+                alt="Capital For Live Logo"
                 className="w-12 h-12 object-contain group-hover:scale-105 transition-transform"
               />
               <div>
-                <h2 className="text-xl font-bold text-white dark:text-[#E8F4F8]">Capital For Life</h2>
+                <h2 className="text-xl font-bold text-white dark:text-[#E8F4F8]">Capital For Live</h2>
                 <p className="text-sm text-white/80 dark:text-[#A8C5D1]">Ahorro Inteligente</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Footer() {
           Powered by <a href="https://wa.me/+59179710328?text=Hola, quisiera una solución digital para mi negocio, por favor" className="text-gray-200 dark:text-[#daf0f3] hover:text-white dark:hover:text-[#b3cbd3] text-xl transition-colors underline">ByteTwo</a>
         </p>
         <p className="text-white/70 dark:text-[#A8C5D1] text-sm text-center">
-          &copy; {new Date().getFullYear()} Capital For Life. Todos los derechos reservados.
+          &copy; {new Date().getFullYear()} Capital For Live. Todos los derechos reservados.
         </p>
       </div>
     </footer>
