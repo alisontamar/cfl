@@ -42,11 +42,11 @@ export default function Navbar() {
           <div className="flex items-center space-x-2 group cursor-pointer">
             <img
               src="/logo.webp"
-              alt="Capital For Life Logo"
+              alt="Capital For Live Logo"
               className="w-16 h-16 object-contain group-hover:scale-105 transition-transform"
             />
             <span className="text-base font-bold text-white dark:text-[#E8F4F8]">
-              Capital For Life
+              Capital For Live
             </span>
           </div>
 
