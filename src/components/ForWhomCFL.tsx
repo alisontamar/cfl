@@ -31,7 +31,7 @@ export default function ForWhomCFL() {
   return (
     <section 
       className="py-20 px-4 bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#0B4A5E] dark:to-[#062D3D] relative border-t border-white/10 dark:border-[#0D5269]/30"
-      aria-label="Para quién es Capital For Life"
+      aria-label="Para quién es Capital For Live"
     >
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
