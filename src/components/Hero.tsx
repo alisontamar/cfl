@@ -43,7 +43,7 @@ export default function Hero() {
               <h1 className="text-7xl lg:text-8xl font-bold leading-none tracking-tight">
                 <span className="block dark:text-[#E8F4F8]">Capital</span>
                 <span className="block text-[#E9F7D9] dark:text-[#7AFF6C]">
-                  For Life
+                  For Live
                 </span>
               </h1>
 
@@ -58,7 +58,7 @@ export default function Hero() {
                 text-white/90
                 dark:text-[#A8C5D1]
               ">
-                Bienvenido a Capital For Life, el sistema que rescata la tradición del ahorro colectivo,
+                Bienvenido a Capital For Live, el sistema que rescata la tradición del ahorro colectivo,
                 potenciado por la seguridad digital y la máxima confiabilidad.
               </p>
             </div>
