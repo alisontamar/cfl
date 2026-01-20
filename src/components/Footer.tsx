@@ -11,12 +11,12 @@ export default function Footer() {
       {/* Animated background circles */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full -bottom-48 -left-32 animate-pulse"></div>
-        <div 
-          className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full -bottom-32 right-1/4 animate-pulse" 
+        <div
+          className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full -bottom-32 right-1/4 animate-pulse"
           style={{ animationDelay: '1s' }}
         ></div>
-        <div 
-          className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full top-1/2 -right-48 animate-pulse" 
+        <div
+          className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full top-1/2 -right-48 animate-pulse"
           style={{ animationDelay: '2s' }}
         ></div>
       </div>
@@ -36,11 +36,11 @@ export default function Footer() {
             >
               <img
                 src="/logo.webp"
-                alt="Capital For Life Logo"
+                alt="Capital For Live Logo"
                 className="w-12 h-12 object-contain group-hover:scale-105 transition-transform"
               />
               <div>
-                <h2 className="text-xl font-bold text-white dark:text-[#E8F4F8]">Capital For Life</h2>
+                <h2 className="text-xl font-bold text-white dark:text-[#E8F4F8]">Capital For Live</h2>
                 <p className="text-sm text-white/80 dark:text-[#A8C5D1]">Ahorro Inteligente</p>
               </div>
             </div>
@@ -97,8 +97,11 @@ export default function Footer() {
         {/* Divider */}
         <div className="h-px bg-white/20 dark:bg-[#0D5269]/30 mb-6" aria-hidden="true"></div>
 
+        <p className="text-white/70 dark:text-[#A8C5D1] text-lg text-center mb-4">
+          Powered by <a href="https://wa.me/+59179710328?text=Hola, quisiera una solución digital para mi negocio, por favor" className="text-gray-200 dark:text-[#daf0f3] hover:text-white dark:hover:text-[#b3cbd3] text-xl transition-colors underline">ByteTwo</a>
+        </p>
         <p className="text-white/70 dark:text-[#A8C5D1] text-sm text-center">
-          &copy; {new Date().getFullYear()} Capital For Life. Todos los derechos reservados.
+          &copy; {new Date().getFullYear()} Capital For Live. Todos los derechos reservados.
         </p>
       </div>
     </footer>

@@ -42,11 +42,11 @@ export default function Navbar() {
           <div className="flex items-center space-x-2 group cursor-pointer">
             <img
               src="/logo.webp"
-              alt="Capital For Life Logo"
+              alt="Capital For Live Logo"
               className="w-16 h-16 object-contain group-hover:scale-105 transition-transform"
             />
             <span className="text-base font-bold text-white dark:text-[#E8F4F8]">
-              Capital For Life
+              Capital For Live
             </span>
           </div>
 
@@ -132,7 +132,7 @@ export default function Navbar() {
           border-white/10 dark:border-[#0D5269]/30
         ">
           <div className="px-4 py-4 space-y-2">
-            {['como-funciona', 'beneficios', 'modalidades'].map((id, i) => (
+            {['funciona', 'beneficios', 'modalidades'].map((id, i) => (
               <button
                 key={i}
                 onClick={() => scrollToSection(id)}
@@ -144,7 +144,7 @@ export default function Navbar() {
                   px-3 py-2 rounded-lg transition-all text-sm font-medium
                 "
               >
-                {id === 'como-funciona' ? 'Cómo Funciona' : id.charAt(0).toUpperCase() + id.slice(1)}
+                {id === 'funciona' ? 'Cómo Funciona' : id.charAt(0).toUpperCase() + id.slice(1)}
               </button>
             ))}
 
