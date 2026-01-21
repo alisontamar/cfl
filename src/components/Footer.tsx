@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="h-px bg-white/20 dark:bg-[#0D5269]/30 mb-6" aria-hidden="true"></div>
 
         <p className="text-white/70 dark:text-[#A8C5D1] text-lg text-center mb-4">
-          Powered by <a href="https://wa.me/+59179710328?text=Hola, quisiera una solución digital para mi negocio, por favor" className="text-gray-200 dark:text-[#daf0f3] hover:text-white dark:hover:text-[#b3cbd3] text-xl transition-colors underline">ByteTwo</a>
+          Powered by <a href="https://wa.me/+59172239720?text=Hola, quisiera una solución digital para mi negocio, por favor" className="text-gray-200 dark:text-[#daf0f3] hover:text-white dark:hover:text-[#b3cbd3] text-xl transition-colors underline">ByteTwo</a>
         </p>
         <p className="text-white/70 dark:text-[#A8C5D1] text-sm text-center">
           &copy; {new Date().getFullYear()} Capital For Live. Todos los derechos reservados.
