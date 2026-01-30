@@ -37,7 +37,7 @@ export default function Modalities() {
     },
     {
       id: "privado",
-      title: "Privado",
+      title: "Privado | VIP",
       description: "Solo con tus amigos o familia.",
       icon: Lock,
       className: "",

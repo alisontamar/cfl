@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
     ArrowLeft,
@@ -10,12 +11,12 @@ import {
     Car,
     HeartHandshake
 } from "lucide-react";
-import { useEffect } from "react";
 
 export default function PasanakuPrivate() {
-        useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
     return (
         <>
             <Link
@@ -30,23 +31,23 @@ export default function PasanakuPrivate() {
                 {/* Animated background circles */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full -bottom-48 -left-32 animate-pulse" />
-                    <div 
-                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full -bottom-32 right-1/4 animate-pulse" 
+                    <div
+                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full -bottom-32 right-1/4 animate-pulse"
                         style={{ animationDelay: '1s' }}
                     />
-                    <div 
-                        className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full top-1/2 -right-48 animate-pulse" 
+                    <div
+                        className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full top-1/2 -right-48 animate-pulse"
                         style={{ animationDelay: '2s' }}
                     />
-                    <div 
-                        className="absolute top-24 left-1/3 w-[28rem] h-[28rem] bg-white/10 dark:bg-[#7AFF6C]/20 rounded-full blur-[140px]" 
+                    <div
+                        className="absolute top-24 left-1/3 w-[28rem] h-[28rem] bg-white/10 dark:bg-[#7AFF6C]/20 rounded-full blur-[140px]"
                     />
                 </div>
 
                 <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6 px-4">
                     <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-white/30 dark:border-[#0D5269]/50 bg-white/10 dark:bg-[#0D5269]/50 text-white dark:text-[#E8F4F8] text-xs font-semibold uppercase tracking-wider">
                         <Lock className="w-5 h-5" />
-                        Grupo Cerrado
+                        Privado / VIP
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-extrabold text-white dark:text-[#E8F4F8]">
@@ -96,8 +97,8 @@ export default function PasanakuPrivate() {
                 {/* Animated background circles */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full top-1/4 -left-32 animate-pulse" />
-                    <div 
-                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full bottom-1/4 -right-32 animate-pulse" 
+                    <div
+                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full bottom-1/4 -right-32 animate-pulse"
                         style={{ animationDelay: '1.5s' }}
                     />
                 </div>
@@ -119,14 +120,27 @@ export default function PasanakuPrivate() {
             {/* Contact placeholder - reemplaza con tu componente Contact */}
             <section className="py-20 px-4 bg-white dark:bg-[#0D5269]">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-4xl font-bold text-gray-900 dark:text-[#E8F4F8] mb-4">
+                    <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-[#E8F4F8] mb-6">
                         ¿Listo para empezar?
                     </h2>
-                    <p className="text-slate-600 dark:text-[#A8C5D1] mb-8">
+                    <p className="text-lg sm:text-xl text-slate-600 dark:text-[#A8C5D1] mb-12">
                         Contacta con nosotros y crea tu grupo privado
                     </p>
+
+                    <div className="mx-auto max-w-3xl p-10 rounded-3xl bg-gradient-to-r from-[#FFF7ED] to-[#FFF3B0] dark:from-[#073246] dark:to-[#074459] border border-amber-200 dark:border-[#075067] shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+                        <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-[#E8F4F8] mb-5">
+                            Aviso importante
+                        </h3>
+                        <p className="text-lg sm:text-xl text-gray-800 dark:text-[#CDEAF6] leading-relaxed mb-4">
+                            La empresa cobrará por el servicio dependiendo de la modalidad y de la cantidad que se juegue en el pasanaku. <strong>Base Bs.100 — Límite Bs. 500.</strong>
+                        </p>
+                        <p className="text-sm sm:text-base text-slate-600 dark:text-[#8FB6C5]">
+                            El pasanaku privado es cuando juegan personas con montos altos.
+                        </p>
+                    </div>
                 </div>
             </section>
+
         </>
     );
 }
