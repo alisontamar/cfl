@@ -1,30 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" translate="no">
   <head>
-    <link rel="icon" href="https://capitalforlivecfl.com/favicon-96x96.png" sizes="96x96" type="image/png" />
+    <link
+      rel="icon"
+      href="https://capitalforlivecfl.com/favicon-96x96.png"
+      sizes="96x96"
+      type="image/png"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="https://capitalforlivecfl.com/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="https://capitalforlivecfl.com/icon.svg" />
-<link rel="shortcut icon" href="https://capitalforlivecfl.com/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://capitalforlivecfl.com/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://capitalforlivecfl.com/icon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://capitalforlivecfl.com/favicon.ico"
+    />
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://capitalforlivecfl.com/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<meta name="apple-mobile-web-app-title" content="CapitalForLive" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://capitalforlivecfl.com/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="CapitalForLive" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#5A8C22" />
     <meta name="color-scheme" content="dark" />
     <meta name="author" content="Capital For Live" />
     <meta name="copyright" content="capitalforlive" />
     <meta name="robots" content="index,follow" />
-    
-    <title>Capitalforlive | Ahorro Colectivo Digital Seguro y Transparente</title>
-    
+
+    <title>
+      Capitalforlive | Ahorro Colectivo Digital Seguro y Transparente
+    </title>
+
     <meta
       name="description"
       content="Capitalforlive es un sistema de ahorro colectivo digital seguro y transparente que te ayuda a invertir y construir tu futuro financiero."
     />
-    
+
     <meta
       property="og:title"
       content="Capital For Live - Ahorro Colectivo Digital"
@@ -37,7 +60,7 @@
       property="og:image"
       content="https://capitalforlivecfl.com/share.webp"
     />
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -51,43 +74,62 @@
       name="twitter:image"
       content="https://capitalforlivecfl.com/share.webp"
     />
-    
+
     <link rel="canonical" href="https://capitalforlivecfl.com/" />
-    
+
     <link rel="preload" href="/mascot.svg" as="image" />
-    
+
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <script>
+      (function () {
+        try {
+          const isTheme = localStorage.getItem("theme");
+          if (isTheme === "dark") {
+            document.documentElement.classList.add("dark");
+          } else if (isTheme === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+              document.documentElement.classList.add("dark");
+            } else {
+              document.documentElement.classList.remove("dark");
+            }
+          }
+        } catch {
+          console.error("Error setting theme");
+        }
+      })();
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body>
-  <noscript>
-    <h1>Capital For Live</h1>
-    <p>
-      Capital For Live o CFL es un sistema de ahorro colectivo digital diseñado
-      para ayudar a las personas a crecer financieramente mediante un modelo
-      seguro, transparente y comunitario.
-    </p>
-  </noscript>
+    <noscript>
+      <h1>Capital For Live</h1>
+      <p>
+        Capital For Live o CFL es un sistema de ahorro colectivo digital
+        diseñado para ayudar a las personas a crecer financieramente mediante un
+        modelo seguro, transparente y comunitario.
+      </p>
+    </noscript>
 
-  <section class="seo-hidden">
-    <h1>Capital For Live – Sistema de Ahorro Colectivo Digital</h1>
-    <p>
-      Capital For Live (CFL) es una plataforma de ahorro colectivo digital que
-      permite a los usuarios organizar y participar en pasanakus digitales de
-      forma segura y transparente.
-    </p>
-    <p>
-      Nuestro objetivo es impulsar el ahorro colaborativo, fortaleciendo la
-      confianza y el crecimiento financiero dentro de comunidades digitales.
-    </p>
-  </section>
+    <section class="seo-hidden">
+      <h1>Capital For Live – Sistema de Ahorro Colectivo Digital</h1>
+      <p>
+        Capital For Live (CFL) es una plataforma de ahorro colectivo digital que
+        permite a los usuarios organizar y participar en pasanakus digitales de
+        forma segura y transparente.
+      </p>
+      <p>
+        Nuestro objetivo es impulsar el ahorro colaborativo, fortaleciendo la
+        confianza y el crecimiento financiero dentro de comunidades digitales.
+      </p>
+    </section>
 
-  <main id="root"></main>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+    <main id="root"></main>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

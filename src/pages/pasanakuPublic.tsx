@@ -8,34 +8,36 @@ import {
     TrendingUp
 } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 export default function PasanakuPublic() {
-        useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     return (
         <>
-            <a
-                href="/"
+            <Link
+                to="/"
                 className="rounded-full w-max absolute top-6 left-6 p-2 hover:bg-white/20 dark:hover:bg-[#0D5269]/50 transition-colors z-20 inline-flex"
             >
                 <ArrowLeft className="w-6 h-6 text-white dark:text-[#E8F4F8]" />
-            </a>
+            </Link>
 
             {/* HERO */}
             <section className="relative flex flex-col h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#0B4A5E] dark:to-[#062D3D]">
                 {/* Animated background circles */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full -top-48 -left-32 animate-pulse" />
-                    <div 
-                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full top-20 right-1/3 animate-pulse" 
+                    <div
+                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full top-20 right-1/3 animate-pulse"
                         style={{ animationDelay: '1s' }}
                     />
-                    <div 
-                        className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full bottom-1/4 -right-48 animate-pulse" 
+                    <div
+                        className="absolute w-[500px] h-[500px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full bottom-1/4 -right-48 animate-pulse"
                         style={{ animationDelay: '2s' }}
                     />
-                    <div 
-                        className="absolute top-20 right-1/3 w-[28rem] h-[28rem] bg-white/10 dark:bg-[#7AFF6C]/20 rounded-full blur-[140px]" 
+                    <div
+                        className="absolute top-20 right-1/3 w-[28rem] h-[28rem] bg-white/10 dark:bg-[#7AFF6C]/20 rounded-full blur-[140px]"
                     />
                 </div>
 
@@ -92,12 +94,12 @@ export default function PasanakuPublic() {
                 {/* Animated background circles */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute w-96 h-96 bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full top-1/3 -left-32 animate-pulse" />
-                    <div 
-                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full bottom-1/4 right-1/4 animate-pulse" 
+                    <div
+                        className="absolute w-80 h-80 bg-[#5A8C22]/10 dark:bg-[#00E5FF]/15 rounded-full bottom-1/4 right-1/4 animate-pulse"
                         style={{ animationDelay: '1.5s' }}
                     />
-                    <div 
-                        className="absolute w-[400px] h-[400px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full -bottom-32 -right-32 animate-pulse" 
+                    <div
+                        className="absolute w-[400px] h-[400px] bg-white/5 dark:bg-[#7AFF6C]/10 rounded-full -bottom-32 -right-32 animate-pulse"
                         style={{ animationDelay: '2.5s' }}
                     />
                 </div>

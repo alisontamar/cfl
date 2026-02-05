@@ -1,17 +1,15 @@
-import { ArrowLeft, Computer, Gavel, Waypoints, BadgeDollarSign, CalendarCheck, ShieldCheck, Handshake, Lightbulb, Percent, Info, Car, Plane, School, Home } from "lucide-react";
 import { useEffect } from "react";
+import { ArrowLeft, Computer, Gavel, Waypoints, BadgeDollarSign, CalendarCheck, ShieldCheck, Handshake, Lightbulb, Percent, Info, Car, Plane, School, Home } from "lucide-react";
+import { Link } from "react-router-dom";
+
 export default function PasanakuWeekly() {
-        useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         element?.scrollIntoView({ behavior: 'smooth' });
-    };
-
-    const goBack = () => {
-        window.history.back();
     };
 
     const laws = [
@@ -85,9 +83,9 @@ export default function PasanakuWeekly() {
 
     return (
         <>
-            <button onClick={goBack} className="rounded-full w-max absolute top-6 left-6 p-2 hover:bg-stone-200 dark:hover:bg-[#0D5269]/50 transition-colors z-20">
+            <Link to="/" className="rounded-full w-max absolute top-6 left-6 p-2 hover:bg-stone-200 dark:hover:bg-[#0D5269]/50 transition-colors z-20">
                 <ArrowLeft className="w-6 h-6 text-gray-700 dark:text-[#E8F4F8]" />
-            </button>
+            </Link>
 
             <section className="relative h-screen flex justify-center items-center overflow-hidden bg-gradient-to-br from-[#7AB82E] to-[#5A8C22] dark:from-[#0B4A5E] dark:to-[#062D3D]">
                 {/* Animated background circles */}
